@@ -17,7 +17,23 @@ int main()
     ll testcases;
     cin>>testcases;
     while(testcases--){
-        
+        ll n;
+        cin>>n;
+        if(n/2 %2 ==1)
+          cout<<"no\n";
+        else{
+          cout<<"yes\n";
+          for(int i=1; i<=n/2; i++)
+            cout<<2*i<<" ";
+          for(int i=1; i<=n/2; i++)
+          {
+          if(i<n/2)cout<<2*i-1<<" ";
+          else cout<<(2*i-1)+n/2;
+          
+          }
+          cout<<"\n";
+
+        }
         
     }
     return 0;
