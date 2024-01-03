@@ -1,4 +1,3 @@
-//Bismillahir Rahmanir Raheem
 #define MOD 1000000007
 #define ll long long
 #define pb push_back
@@ -18,7 +17,13 @@ int main()
     ll testcases;
     cin>>testcases;
     while(testcases--){
-        
+      int x, y;
+	cin >> x >> y;
+	
+	if (x > 3) puts("YES");
+	else if (x == 1) puts(y == 1 ? "YES" : "NO");
+	else puts(y <= 3 ? "YES" : "NO");
+
         
     }
     return 0;

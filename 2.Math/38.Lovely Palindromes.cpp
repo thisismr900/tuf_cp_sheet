@@ -15,11 +15,14 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    ll testcases;
-    cin>>testcases;
+    ll testcases=1;
+    // cin>>testcases;
     while(testcases--){
-        
-        
+        string n;
+        cin>>n;
+        cout << n;
+        reverse(n.begin(), n.end());
+        cout << n;
     }
     return 0;
 }
