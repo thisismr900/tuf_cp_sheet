@@ -21,8 +21,16 @@ int main()
     ll testcases;
     cin>>testcases;
     while(testcases--){
-        
-        
+        ll h1, h2, h3;
+        cin>>h1>>h2>>h3;
+        ll totalHealth = h1+h2+h3;
+        ll minHealth = (totalHealth)/9;
+        if( (totalHealth %9 ==0) && h1>=minHealth && h2>=minHealth && h3>=minHealth )
+          cout<<"yes\n";
+        else
+          cout<<"no\n";
+          
+
     }
     return 0;
 }
