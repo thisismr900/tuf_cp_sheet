@@ -8,23 +8,31 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-/****************************************
-LOGIC:
 
-*****************************************/
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    ll testcases;
-    cin>>testcases;
-    while(testcases--){
-        
-        
+    string s;
+    cin>>s;
+    stack<char>stack;
+    
+    for(auto c:s){
+      if(stack.size()==0)
+        stack.push(c);
+      else{
+        if(stack.top() == c)
+          stack.pop();
+        else
+          stack.push(c);
+      }
     }
+    if(stack.size()==0)
+      cout<<"YES";
+    else cout<<"NO";
     return 0;
 }
 
-
+ 
